@@ -4,13 +4,29 @@ function adicionarPedido(nomePizza) {
 
     quantidadePizzas++;
 
+    const tamanhos = document.querySelectorAll(".tamanho");
+
+    const tamanhoSelecionado = tamanhos[0].value;
+
+    let tamanhoTexto = "";
+
+    if (tamanhoSelecionado === "P") {
+        tamanhoTexto = "Pequena";
+    } else if (tamanhoSelecionado === "M") {
+        tamanhoTexto = "Média";
+    } else {
+        tamanhoTexto = "Grande";
+    }
+
     const mensagem = document.getElementById("mensagem");
     const contador = document.getElementById("contador");
 
     mensagem.innerHTML =
-        "A pizza <strong>" +
+        "Pizza <strong>" +
         nomePizza +
-        "</strong> foi adicionada ao seu pedido! 🍕";
+        "</strong> - Tamanho: <strong>" +
+        tamanhoTexto +
+        "</strong> adicionada ao pedido! 🍕";
 
     contador.innerHTML =
         "Total de pizzas: " + quantidadePizzas;
