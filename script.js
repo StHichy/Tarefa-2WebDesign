@@ -1,12 +1,14 @@
 let quantidadePizzas = 0;
 
-function adicionarPedido(nomePizza) {
+function adicionarPedido(nomePizza, botao) {
 
     quantidadePizzas++;
 
-    const tamanhos = document.querySelectorAll(".tamanho");
+    // Encontra o card da pizza que foi clicada
+    const card = botao.parentElement;
 
-    const tamanhoSelecionado = tamanhos[0].value;
+    // Encontra o tamanho selecionado dentro desse card
+    const tamanhoSelecionado = card.querySelector(".tamanho").value;
 
     let tamanhoTexto = "";
 
