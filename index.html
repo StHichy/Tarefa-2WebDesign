@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pizzaria Bella Napoli</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            🍕 Bella Napoli
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre nós</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-text">
+
+                <h1>A melhor pizza da cidade</h1>
+
+                <p>
+                    Pizzas artesanais preparadas com ingredientes selecionados
+                    e muito sabor.
+                </p>
+
+                <a href="#cardapio" class="btn">
+                    Ver cardápio
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="cardapio" id="cardapio">
+
+            <h2>Nosso Cardápio</h2>
+
+            <div class="pizzas">
+
+                <div class="pizza-card">
+
+                    <h3>🍕 Margherita</h3>
+
+                    <p>
+                        Molho de tomate, mussarela, tomate e manjericão.
+                    </p>
+
+                    <span>R$ 39,90</span>
+
+                    <button onclick="adicionarPedido('Margherita')">
+                        Adicionar
+                    </button>
+
+                </div>
+
+
+                <div class="pizza-card">
+
+                    <h3>🍕 Calabresa</h3>
+
+                    <p>
+                        Molho de tomate, mussarela, calabresa e cebola.
+                    </p>
+
+                    <span>R$ 42,90</span>
+
+                    <button onclick="adicionarPedido('Calabresa')">
+                        Adicionar
+                    </button>
+
+                </div>
+
+
+                <div class="pizza-card">
+
+                    <h3>🍕 Portuguesa</h3>
+
+                    <p>
+                        Mussarela, presunto, ovos, cebola, ervilha e azeitona.
+                    </p>
+
+                    <span>R$ 45,90</span>
+
+                    <button onclick="adicionarPedido('Portuguesa')">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="pedido">
+
+            <h2>Seu Pedido</h2>
+
+            <p id="mensagem">
+                Nenhuma pizza adicionada ao pedido.
+            </p>
+
+        </section>
+
+
+        <section class="sobre" id="sobre">
+
+            <h2>Sobre a Bella Napoli</h2>
+
+            <p>
+                Há mais de 10 anos levando pizzas de qualidade para nossos clientes.
+                Trabalhamos com ingredientes selecionados e receitas especiais.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Bella Napoli - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

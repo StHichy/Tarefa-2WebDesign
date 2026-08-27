@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #9e1b1b;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* BANNER */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 10%;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1513104890138-7c749659a591");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #e6a817;
+    color: #222;
+
+    padding: 15px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #f0bd3c;
+}
+
+
+/* CARDÁPIO */
+
+.cardapio {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.pizzas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pizza-card {
+    background-color: white;
+
+    width: 300px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.pizza-card:hover {
+    transform: translateY(-8px);
+}
+
+.pizza-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pizza-card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pizza-card span {
+    display: block;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #9e1b1b;
+
+    margin-bottom: 20px;
+}
+
+.pizza-card button {
+    background-color: #9e1b1b;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.pizza-card button:hover {
+    background-color: #7c1111;
+}
+
+
+/* PEDIDO */
+
+.pedido {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 10%;
+}
+
+.pedido h2 {
+    margin-bottom: 20px;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    padding: 80px 20%;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #9e1b1b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+}
