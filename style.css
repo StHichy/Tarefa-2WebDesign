@@ -225,6 +225,22 @@ footer {
     padding: 25px;
 }
 
+.tamanhos {
+    margin: 20px 0;
+}
+
+.tamanhos label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.tamanhos select {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
 
 /* RESPONSIVIDADE */
 

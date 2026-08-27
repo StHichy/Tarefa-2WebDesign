@@ -5,7 +5,6 @@ function adicionarPedido(nomePizza) {
     quantidadePizzas++;
 
     const mensagem = document.getElementById("mensagem");
-
     const contador = document.getElementById("contador");
 
     mensagem.innerHTML =
@@ -15,5 +14,4 @@ function adicionarPedido(nomePizza) {
 
     contador.innerHTML =
         "Total de pizzas: " + quantidadePizzas;
-
 }
